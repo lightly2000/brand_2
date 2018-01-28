@@ -1,0 +1,1490 @@
+*
+  margin: 0
+  padding: 0
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&subset=latin-ext')
+
+body
+  font-family: 'Lato', sans-serif
+  font-style: normal
+  margin: 0 0 0 0
+  padding: 0 0 0 0
+
+$color-rose: #f16d7f
+$color-dark: #222222
+$footer-right: 651px
+$container-width: 1142px
+
+.container
+  width: $container-width
+  margin: 0 auto
+
+.header
+  height: 100px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+  border: 1px solid #ececec
+  background-color: #ffffff
+
+.header_top
+  display: flex
+  height: 100%
+  align-items: center
+
+.logo
+  width: 59px
+  height: 51px
+
+.brand
+  margin-left: 15px
+  color: $color-dark
+  font-size: 27px
+  font-weight: 100
+  text-align: center
+  text-transform: uppercase
+  text-decoration: none
+
+.brand_link
+  padding-top: 7px
+  margin-right: 37px
+  text-decoration: none
+
+.header_top select
+  border-bottom-left-radius: 3px
+  border-top-left-radius: 3px
+  border: 1px solid #e6e6e6
+  width: 87px
+  height: 38px
+
+.brand > span
+  color: #ef5b70
+  font-weight: bold
+
+.search
+  border-bottom-right-radius: 3px
+  border-top-right-radius: 3px
+  border: 1px solid #e6e6e6
+  background-color: #ffffff
+  width: 317px
+  height: 38px
+
+.form_search
+  width: 315px
+  height: 36px
+  display: flex
+  align-items: center
+
+.form_search > input[type="text"]
+  width: 276px
+  height: 36px
+  border: none
+  font-weight: 300
+  line-height: 32px
+  font-size: 14px
+  padding: 0 15px
+  color: #a4a4a4
+
+.form_search > input[type="button"]
+  width: 38px
+  height: 36px
+  border: none
+  border-left: 1px solid #e8e8e8
+  background: url(img/search.png) no-repeat center center
+
+input[type="button"]:active
+  background-color: $color-rose
+
+.cart_account
+  height: 38px
+  margin-left: 349px
+  display: flex
+  align-items: center
+
+.cart
+  width: 32px
+  height: 29px
+
+.my_account_button
+  width: 128px
+  background-color: $color-rose
+  border: 1px solid $color-rose
+  margin-left: 26px
+  height: 36px
+  line-height: 36px
+  color: #fff
+  font-size: 15px
+  text-align: center
+  -webkit-transition: background 0.6s, color 0.6s
+  -moz-transition: background 0.6s, color 0.6s
+  -o-transition: background 0.6s, color 0.6s
+
+.my_account_button:hover
+  background-color: #fff
+  color: $color-rose
+
+nav
+  position: relative
+  z-index: 5
+
+.nav_flex
+  display: flex
+  align-items: center
+  height: 51px
+  justify-content: center
+
+.nav_flex > li
+  list-style-type: none
+  margin: 0 10px
+  position: relative
+
+.nav_flex > li:hover .mega-menu
+  display: block
+
+.nav_flex > li > a
+  padding: 19px 10px
+  color: $color-dark
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  text-decoration: none
+
+.nav_flex .link_active
+  padding-bottom: 17px
+  border-bottom: 3px solid #ef5b70
+
+.nav_flex > li > a:hover
+  padding-bottom: 17px
+  border-bottom: 3px solid #ef5b70
+
+.mega-menu
+  padding: 20px 25px
+  border-radius: 5px
+  border: 1px solid #e8e8e8
+  background-color: #fff
+  position: absolute
+  top: 39px
+  left: -2px
+  display: none
+  -webkit-transition: all 2s linear
+  -moz-transition: all 2s linear
+  -o-transition: all 2s linear
+
+.angle
+  width: 10px
+  height: 10px
+  border-top: 3px solid #ef5b70
+  border-left: 3px solid #ef5b70
+  position: absolute
+  top: -9px
+  left: 21px
+  background-color: #fff
+  transform: rotate(45deg)
+
+.mega-menu_flex
+  display: flex
+
+.mega-menu__list
+  width: 235px
+
+.mega-menu__list li
+  list-style-type: none
+  margin: 0 10px
+
+.mega-menu__list:not(:last-of-type)
+  margin-right: 30px
+
+//.mega-menu__Items
+  display: flex
+
+.mega-menu__Items a
+  text-decoration: none
+  color: #646464
+  font-size: 14px
+  line-height: 28px
+  font-weight: 400
+
+.mega-menu__Items a:hover
+  text-decoration: underline
+  color: #ef5b70
+
+.mega-menu__heading
+  border-bottom: 1px solid #000
+  text-transform: uppercase
+  font-size: 14px
+  line-height: 32px
+  font-weight: 400
+
+.menu-pic
+  width: 235px
+  height: 118px
+  margin-top: 21px
+  background-image: url("img/mega-menu_pic.jpg")
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+.menu-pic-link
+  width: 235px
+  height: 118px
+  font-size: 22px
+  line-height: 32px
+  font-weight: 900
+  text-transform: uppercase
+  text-decoration: none
+  color: #fff
+
+.menu-pic-text
+  margin-left: 150px
+  margin-bottom: 7px
+
+.slider
+  height: 613px
+  background-color: #e8e8e8
+  margin-top: 4px
+
+.slider_flex
+  display: flex
+  height: 100%
+  align-items: center
+  background: url(img/slider_man_.jpg) 213px 0
+
+.slider_text
+  height: 92px
+  border-left: 12px solid #ef5b70
+  text-transform: uppercase
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.slider_text div:first-child
+  font-size: 60px
+  font-weight: 900
+  line-height: 60px
+  height: 60px
+
+.slider_text div:last-child
+  font-size: 32px
+  font-weight: 900
+  height: 32px
+
+.slider_text > div > span
+  color: #ef5b70
+  font-weight: 900
+
+.title
+  position: relative
+  height: 150px
+  background-color: #f8f3f4
+  margin-top: 4px
+  z-index: 2
+
+.title_flex
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  text-transform: uppercase
+
+.cart-list
+  margin-top: 90px
+
+.cart-list-flex
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1px solid #eaeaea
+
+.cart-column
+  width: 110px
+  text-align: center
+
+.column-1 a
+  text-decoration: none
+
+.cart-title
+  color: #222222
+  font-size: 13px
+  font-weight: 700
+  line-height: 20px
+  padding-bottom: 20px
+  text-transform: uppercase
+
+.cart-column:first-child
+  text-align: left
+  width: 530px
+
+.cart-item-row
+  height: 166px
+
+.cart-item-img-link
+  display: block
+  width: 100px
+  height: 115px
+  margin-right: 21px
+  background-image: url("img/cart-item-img.png")
+  float: left
+  -webkit-transition: filter .4s
+  -moz-transition: filter .4s
+  -o-transition: filter .4s
+
+.cart-item-img-link:hover
+  filter: brightness(90%)
+
+.cart-item-name
+  padding-top: 13px
+  padding-bottom: 38px
+  color: #222222
+  font-size: 13px
+  font-weight: 400
+  text-transform: uppercase
+  -webkit-transition: color .4s
+  -moz-transition: color .4s
+  -o-transition: color .4s
+
+.cart-item-name a:hover
+  color: $color-rose
+
+.cart-text2
+  color: #6f6e6e
+  font-size: 13px
+  font-weight: 300
+  line-height: 15px
+
+.cart-text1
+  color: #575757
+  font-size: 13px
+  font-weight: 400
+  line-height: 20px
+
+.cart-item-row .cart-column
+  color: #656565
+  font-size: 13px
+  font-weight: 400
+  line-height: 20px
+
+.cart-quantuty input
+  width: 54px
+  height: 30px
+  border: 1px solid #eaeaea
+  background-color: #fff
+  color: #656565
+  text-align: center
+  font-size: 13px
+  font-weight: 400
+  line-height: 24px
+
+.cart-quantuty input::-webkit-input-placeholder
+  color: #656565
+
+.cart-quantuty input:-moz-placeholder
+  color: #656565
+
+.cart-button
+  margin-top: 44px
+
+.cart-button-block
+  display: flex
+  justify-content: space-between
+
+.cart-button-link-clear
+  width: 235px
+
+.cart-button-link-continue
+  width: 225px
+
+[class^="cart-button-link"]
+  display: block
+  height: 50px
+  border: 1px solid #eaeaea
+  background-color: #fff
+  color: #4a4a4a
+  font-size: 14px
+  font-weight: 700
+  line-height: 50px
+  text-decoration: none
+  text-align: center
+  text-transform: uppercase
+  -webkit-transition: background .4s, color .4s
+  -moz-transition: background .4s, color .4s
+  -o-transition: background .4s, color .4s
+
+[class^="cart-button-link"]:hover
+  background-color: #4a4a4a
+  color: #fff
+
+.cart-order-info
+  width: 100%
+  margin-top: 63px
+  margin-bottom: 79px
+
+.order-info-flex
+  display: flex
+  justify-content: space-between
+
+.order-info
+  color: #222222
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  margin-bottom: 22px
+
+.order-discount p:last-of-type
+  display: block
+  margin-bottom: 24px
+
+.order-info-flex input[type="text"], .order-info-flex select
+  width: 319px
+  height: 43px
+  border: 1px solid #eaeaea
+  background-color: #fff
+  padding: 0 17px
+  color: #656565
+  font-size: 13px
+  font-weight: 300
+  margin-bottom: 20px
+
+.order-info-flex input::-webkit-input-placeholder
+  color: #b1b1b1
+  font-size: 13px
+  font-weight: 300
+
+.order-info-flex input:-moz-placeholder
+  color: #b1b1b1
+  font-size: 13px
+  font-weight: 300
+
+.order-info-flex select
+  width: 355px
+  color: #b1b1b1
+
+.order-info-flex input[type="submit"]
+  height: 35px
+  border: 1px solid #eaeaea
+  background-color: #fff
+  text-transform: uppercase
+  padding: 0 12px
+  color: #4a4a4a
+  font-size: 11px
+  font-weight: 700
+  margin-bottom: 23px
+  -webkit-transition: background .4s, color .4s
+  -moz-transition: background .4s, color .4s
+  -o-transition: background .4s, color .4s
+
+.order-info-flex input[type="submit"]:hover
+  background-color: #4a4a4a
+  color: #fff
+
+.order-total-block
+  width: 360px
+  height: 174px
+  padding-top: 40px
+  background-color: #f5f3f3
+
+.order-total-in
+  width: 275px
+  margin: 0 auto 14px auto
+  text-align: right
+  text-transform: uppercase
+
+.cart-text1_1
+  color: #4a4a4a
+  font-size: 11px
+  font-weight: 400
+  line-height: 12px
+
+.cart-text2_1
+  color: #222222
+  font-size: 16px
+  font-weight: 700
+  line-height: 16px
+
+.cart-text2_2
+  color: #f16d7f
+  font-size: 16px
+  font-weight: 700
+  line-height: 16px
+
+.order-checkout
+  width: 275px
+  margin: 22px auto
+  border-top: 1px solid #e2e2e2
+  padding-top: 17px
+
+.order-checkout a
+  display: block
+  width: 271px
+  height: 48px
+  border: 1px solid $color-rose
+  background-color: $color-rose
+  text-decoration: none
+  text-transform: uppercase
+  text-align: center
+  padding: 0
+  color: #fff
+  font-size: 16px
+  line-height: 48px
+  font-weight: 700
+  margin-bottom: 0
+  -webkit-transition: background .4s, color .4s
+  -moz-transition: background .4s, color .4s
+  -o-transition: background .4s, color .4s
+
+.order-checkout a:hover
+  background-color: #fff
+  color: $color-rose
+
+.name_page
+  font-size: 24px
+  color: $color-rose
+
+.breadcrumbs ul
+  display: flex
+  justify-content: flex-end
+
+.breadcrumbs li
+  list-style-type: none
+  display: inline-block
+  padding-right: 15px
+
+.breadcrumbs li a
+  text-decoration: none
+  color: #636363
+  font-size: 14px
+
+.breadcrumbs li a:hover
+  color: $color-rose
+
+.breadcrumbs li:after
+  content: '/'
+  position: absolute
+  width: 15px
+  display: inline-block
+  text-align: center
+
+.breadcrumbs li:last-child a
+  color: $color-rose
+
+.breadcrumbs li:last-child:after
+  content: ''
+
+.image-slide
+  position: relative
+  background-color: #f7f7f7
+  border: 1px solid #eaeaea
+  z-index: 1
+
+.image-slide-flex
+  display: flex
+  width: 100%
+  height: 777px
+  align-items: center
+  justify-content: space-between
+
+.arrow
+  width: 47px
+  height: 47px
+  text-align: center
+  background-color: rgba(42, 42, 42, 0.15)
+
+.slide-arrow
+  display: block
+  width: 100%
+  height: 100%
+  font-size: 24px
+  color: #fff
+  line-height: 47px
+
+.product-description
+  position: relative
+  height: 730px
+  margin-top: -80px
+  z-index: 4
+
+.p-d-block0
+  height: 100%
+  background-color: #fff
+  border: 1px solid #eaeaea
+
+.p-d-block
+  width: 642px
+  margin: 0 auto
+  text-align: center
+
+.p-d-block-title
+  margin-top: 73px
+  text-align: center
+  color: #f16d7f
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  display: inline-block
+
+.p-d-block-line
+  height: 3px
+  margin-top: 10px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.line
+  width: 33%
+
+.line-1
+  height: 1px
+  background-color: #eaeaea
+
+.line-2
+  height: 3px
+  background-color: #ef5b70
+
+.p-d-block-name
+  margin-top: 17px
+  text-align: center
+  color: #4d4d4d
+  font-size: 18px
+  font-weight: 900
+  text-transform: uppercase
+
+.p-d-block-description
+  margin-top: 67px
+  text-align: center
+  color: #5e5e5e
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+
+.p-d-block-prop
+  margin-top: 28px
+  display: flex
+  justify-content: center
+
+.prop-text
+  margin-left: 44px
+  text-transform: uppercase
+
+.prop-text .text1
+  color: #b9b9b9
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+
+.prop-text .text2
+  color: #2f2f2f
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+
+.p-d-block-price
+  margin-top: 37px
+  color: #ef5b70
+  font-size: 24px
+  font-weight: 700
+  line-height: 24px
+
+.big-line
+  width: 100%
+  margin-top: 43px
+  height: 1px
+  background-color: #eaeaea
+
+.p-d-block-choose
+  margin: 63px auto 0 auto
+  max-width: 538px
+  display: flex
+  justify-content: space-between
+
+.choose
+  width: 147px
+  text-align: left
+
+.choose p
+  color: #2f2f2f
+  margin-bottom: 16px
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+
+.choose select, .choose input
+  width: 144px
+  height: 35px
+  border: 1px solid #eaeaea
+  background-color: #fff
+  color: #bcbcbc
+  font-size: 13px
+  font-weight: 400
+  line-height: 24px
+  padding: 0 15px
+
+.choose input
+  width: 114px
+  padding: 0 15px
+
+.choose input::-webkit-input-placeholder
+  color: #bcbcbc
+
+.choose input:-moz-placeholder
+  color: #bcbcbc
+
+.p-d-block-button
+  max-width: 538px
+  margin: 28px auto 0 auto
+  display: flex
+  height: 55px
+  border: 1px solid #ef5b70
+
+.p-d-block-button-link
+  display: flex
+  width: 100%
+  height: 100%
+  color: #ef5b70
+  font-size: 16px
+  font-weight: 700
+  text-decoration: none
+  align-items: center
+  justify-content: center
+  -webkit-transition: background .4s, color .4s
+  -moz-transition: background .4s, color .4s
+  -o-transition: background .4s, color .4s
+
+.p-d-block-button-link:hover
+  background-color: #ef5b70
+  color: #fff
+
+.p-d-block-button-link:hover div
+  background-image: url("img/single_cart_white.png")
+
+.p-d-block-button-link div
+  width: 26px
+  height: 24px
+  margin-right: 15px
+  background-image: url("img/single_cart_red.png")
+  -webkit-transition: background .4s
+  -moz-transition: background .4s
+  -o-transition: background .4s
+
+.ymla-flex > p
+  margin-top: 119px
+  margin-bottom: 72px
+  font-size: 24px
+  text-transform: uppercase
+  font-weight: 900
+  color: #4d4d4d
+  text-align: center
+
+.product-offer-filter
+  display: flex
+  height: 165px
+  flex-direction: column
+  justify-content: space-between
+
+.product-offer-filter1
+  width: 100%
+  margin-top: 10px
+  height: 74px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.filter-trending
+  width: 180px
+  height: 100%
+
+.filter-size
+  width: 240px
+  height: 100%
+
+.filter-size-check
+  display: flex
+  flex-wrap: wrap
+
+.filter-size-check div
+  width: 59px
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
+
+.filter-size-check input
+  margin-right: 9px
+
+.filter-price
+  width: 265px
+  height: 100%
+
+.product-offer-filter2
+  width: 100%
+  height: 50px
+  background-color: #f3f3f3
+
+.filter-trending, .filter-size, .filter-price
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.filter-title
+  text-transform: uppercase
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 900
+  line-height: 20px
+
+.filter-trending a
+  display: inline-block
+  text-decoration: none
+  padding-right: 15px
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
+
+.filter-trending a:after
+  content: '|'
+  position: absolute
+  margin-left: 7px
+  display: inline-block
+  text-align: center
+
+.filter-trending a:nth-child(3n):after
+  content: ''
+
+.filter-trending a:hover
+  color: $color-rose
+
+.filter-trending a:hover:after
+  color: #6f6e6e
+
+.filter-size label
+  color: #6f6e6e
+
+input[type=range]
+  border: none
+  width: 100%
+  padding: 0
+
+input[type=range]::-webkit-slider-thumb
+  -webkit-appearance: none
+  background: #f16d7f
+
+input[type=range]::-webkit-slider-runnable-track
+  background: #f0f0f0
+
+input[type=range]::-moz-range-track
+  background: #f0f0f0
+
+input[type=range]::-moz-range-thumb
+  background: #f16d7f
+
+input[type=range]::-ms-thumb
+  background: #f16d7f
+
+input[type=range]:focus
+  outline: none
+
+.filter-price
+  color: #6f6e6e
+
+.product-offer-filter2
+  display: flex
+  justify-content: start
+  align-items: center
+
+.product-offer-filter2 select
+  width: 87px
+  height: 30px
+  color: #6f6e6e
+  font-size: 14px
+  line-height: 30px
+  background-color: #ffffff
+  border: 1px solid #ebebeb
+
+.filter2-sort
+  height: 30px
+  color: #6f6e6e
+  font-size: 14px
+  line-height: 30px
+  padding-left: 13px
+  padding-right: 8px
+  margin-left: 9px
+  background-color: #ffffff
+  border: 1px solid #ebebeb
+
+.category-product
+  margin-top: 60px
+
+.category-product-flex
+  height: 100%
+  display: flex
+  justify-content: space-between
+
+details summary::-webkit-details-marker
+  display: none
+
+details, summary
+  display: block
+
+.category-nav details p
+  font-size: 14px
+  font-weight: 300
+  line-height: 33px
+  padding-left: 25px
+
+.category-nav details a
+  display: block
+  text-decoration: none
+  color: #6f6e6e
+  width: 218px
+  -webkit-transition: background .35s
+  -moz-transition: background .35s
+  -o-transition: background .35s
+
+.category-nav details a:hover
+  color: #ef5b70
+  background-color: #f8f3f4
+
+.category-nav details
+  width: 129px
+
+.category-nav details summary
+  height: 37px
+  border-left: 5px solid #ef5b70
+  color: #6f6e6e
+  padding-left: 20px
+  font-size: 14px
+  font-weight: 700
+  line-height: 37px
+  text-transform: uppercase
+  border-bottom: 1px solid #ebebeb
+  box-sizing: border-box
+  width: 243px
+
+.category-nav details summary:hover
+  color: #ef5b70
+
+.category-nav details[open] summary
+  color: #ef5b70
+
+.category-nav details summary:after
+  content: url("img/arrow_down.png")
+  display: inline-block
+  float: right
+  position: relative
+  width: 15px
+  margin-right: 5px
+
+.category-nav details[open] summary:after
+  content: url("img/arrow_up.png")
+
+.product-offer
+  width: 867px
+
+.product_product
+  margin-top: 50px
+
+.pagination
+  width: 100%
+  height: 44px
+  margin-top: 43px
+  margin-bottom: 110px
+  display: flex
+  justify-content: space-between
+
+.pagination-number
+  width: 261px
+  height: 100%
+  border-radius: 3px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+
+.pagination-number a
+  display: inline-block
+  width: 25px
+  text-decoration: none
+  color: #c4c4c4
+  font-size: 16px
+  font-weight: 300
+  line-height: 44px
+  text-align: center
+
+.pagination-number a:nth-last-child(2)
+  width: 44px
+
+.pagination-number a:hover
+  color: #ef5b70
+
+.pagination-button a
+  display: block
+  text-decoration: none
+  width: 150px
+  height: 44px
+  color: $color-rose
+  font-size: 16px
+  font-weight: 300
+  line-height: 44px
+  text-align: center
+  border: 1px solid $color-rose
+  border-radius: 3px
+  -webkit-transition: background .4s, color .4s
+  -moz-transition: background .4s, color .4s
+  -o-transition: background .4s, color .4s
+
+.pagination-button a:hover
+  background-color: $color-rose
+  color: #ffffff
+
+.feature-box
+  background-color: #222224
+  width: 100%
+  height: 341px
+
+.feature-box-flex
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.feature-div
+  width: $container-width/3
+  color: #fff
+  height: 138px
+  text-align: center
+
+.feature-div img
+  margin-bottom: 29px
+
+.feature-div p:first-of-type
+  color: #fbfbfb
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 17px
+
+.feature-div p:last-of-type
+  color: #fbfbfb
+  font-size: 14px
+  font-weight: 300
+
+.category
+  margin: 100px auto
+  display: flex
+  justify-content: space-between
+
+.category a
+  font-size: 18px
+  text-decoration: none
+  font-weight: 900
+  text-align: left
+  color: $color-dark
+  text-transform: uppercase
+
+.category span
+  color: #ef5b70
+  font-size: 30px
+
+.category_link
+  position: relative
+  height: 82px
+  top: 26px
+  padding-left: 19px
+  padding-top: 16px
+  background-color: #ffffff
+
+.item
+  width: 560px
+
+.item-1
+  margin-bottom: 20px
+  height: 542px
+  background-image: url(img/man.jpg)
+  width: 560px
+  -webkit-background-size: cover
+  background-size: cover
+
+.item-1:hover
+  animation: kenburns-top 5s ease-out both
+
+.item-1 > div
+  width: 156px
+
+.item-2
+  height: 261px
+  background-image: url(img/accesories.jpg)
+
+.item-2 > div
+  width: 206px
+
+.item-3
+  margin-bottom: 20px
+  height: 261px
+  background-image: url(img/women.jpg)
+
+.item-3 > div
+  width: 143px
+
+.item-4
+  height: 542px
+  background-image: url(img/kids.jpg)
+
+.item-4 > div
+  width: 161px
+
+.product_main
+  height: 851px
+
+.product_text
+  height: 30px
+  color: $color-dark
+  font-size: 30px
+  font-weight: 700
+  text-align: center
+
+.product_text > span
+  height: 14px
+  color: #9f9f9f
+  font-size: 14px
+  font-weight: 400
+  text-align: center
+
+.product
+  margin-top: 100px
+
+.item_product, .item_product2
+  display: inline-block
+  width: 261px
+  height: 362px
+  margin: 0 28px 40px 0
+  position: relative
+
+.item_product:nth-child(4n)
+  margin-right: 0
+
+.item_product2:nth-child(3n)
+  margin-right: 0
+
+.item_product:hover, .item_product2:hover
+  box-shadow: 0 0 9px #444
+
+.item_product:hover > a:first-of-type > img, .item_product2:hover > a:first-of-type > img
+  -webkit-transition: filter 0.4s
+  -moz-transition: filter 0.4s
+  -o-transition: filter 0.4s
+
+.item_product:hover > a:first-of-type > img, .item_product2:hover > a:first-of-type > img
+  filter: brightness(40%)
+
+.item_product_link
+  display: block
+  width: 261px
+  height: 362px
+  text-decoration: none
+
+.add_cart
+  display: none
+  align-items: center
+  position: absolute
+  top: 130px
+  left: 70px
+  border: 1px solid #fff
+  text-decoration: none
+  color: #fff
+  padding: 10px
+
+.add_cart_img
+  height: 15px
+  margin-right: 5px
+
+.item_product:hover .add_cart, .item_product2:hover .add_cart
+  display: flex
+
+.item_product_link p
+  color: $color-dark
+  font-size: 13px
+  margin-left: 14px
+  margin-top: 18px
+  margin-bottom: 17px
+  text-transform: uppercase
+
+.item_product_link span
+  color: $color-rose
+  font-size: 16px
+  margin-left: 14px
+
+.container_flex
+  display: flex
+  margin-top: 80px
+  margin-bottom: 113px
+  justify-content: center
+
+.container_feature
+  display: flex
+  margin-top: 50px
+  margin-bottom: 97px
+  justify-content: center
+  background-color: #222224
+
+.feature_img
+  width: 767px
+
+.feature_article
+  width: 373px
+
+article
+  display: flex
+  width: 294px
+  margin-top: 50px
+  margin-left: 48px
+
+.article-img
+  margin-right: 30px
+  width: 48px
+  align-items: center
+
+.article_text
+  color: #fbfbfb
+  padding-top: 2px
+
+.article_text p:first-of-type
+  font-size: 20px
+  font-weight: 700
+
+.article_text p:last-of-type
+  display: inline-block
+  margin-top: 10px
+  font-size: 14px
+  font-weight: 300
+
+.product_button_link
+  display: flex
+  text-decoration: none
+  background-color: $color-rose
+  border: 1px solid $color-rose
+  width: 212px
+  height: 48px
+  color: #ffffff
+  font-size: 16px
+  font-weight: 700
+  line-height: 54px
+  align-items: center
+  justify-content: center
+  -webkit-transition: background 0.5s, color 0.5s
+  -moz-transition: background 0.5s, color 0.5s
+  -o-transition: background 0.5s, color 0.5s
+
+.product_button_link:hover
+  color: $color-rose
+  background-color: #fff
+
+.Feature
+  margin-bottom: 97px
+
+.subscribe_img
+  height: 438px
+  margin: 0 auto
+  background: rgba(242, 242, 242, 0.5) url(img/subscribe_img.jpg)
+  filter: saturate(90%)
+
+.subscribe
+  display: flex
+
+.subscribe_block
+  width: 50%
+  height: 437px
+  display: flex
+  align-items: center
+
+.subscribe_block:last-child
+  justify-content: center
+
+.subscribe_block_left
+  width: 500px
+  height: 171px
+  margin-top: -60px
+  display: flex
+
+.subscribe_photo
+  width: 83px
+  height: 83px
+  margin-right: 28px
+  border-radius: 50%
+  background-image: url(img/Din.jpg)
+
+.subscribe_text
+  display: flex
+  align-items: flex-end
+  height: 83px
+  color: rgba(34, 34, 36, 0.67)
+  font-size: 16px
+
+.subscribe_name
+  margin-top: 20px
+  color: $color-rose
+  font-size: 16px
+  font-weight: 700
+  line-height: 26px
+
+.subscribe_adress
+  font-size: 12px
+
+.subscribe_block_right
+  width: 386px
+  height: 130px
+
+[class^="subscribe_block_right"]
+  text-transform: uppercase
+  text-align: center
+  color: rgba(34, 34, 36, 0.67)
+
+.subscribe_block_right_text_1
+  font-size: 24px
+  line-height: 32px
+
+.subscribe_block_right_form
+  width: 386px
+  height: 46px
+  display: flex
+  margin-top: 30px
+  align-items: center
+
+.form_subscribe
+  display: flex
+  margin: 0 auto
+  justify-content: center
+  align-items: center
+
+.form_subscribe > input[type="email"]
+  width: 224px
+  height: 46px
+  border: none
+  padding: 0 28px
+  line-height: 32px
+  font-size: 14px
+  color: #a4a4a4
+  border-top-left-radius: 46px
+  border-bottom-left-radius: 46px
+  background-color: #e1e1e1
+
+.form_subscribe > input[type="submit"]
+  width: 100px
+  height: 46px
+  border: none
+  font-size: 14px
+  border-top-right-radius: 46px
+  border-bottom-right-radius: 46px
+  background-color: $color-rose
+  color: #fff
+  border-left: 1px solid #e8e8e8
+  -webkit-transition: background 0.5s, color 0.5s
+  -moz-transition: background 0.5s, color 0.5s
+  -o-transition: background 0.5s, color 0.5s
+
+.form_subscribe > input[type="submit"]:hover
+  background-color: #fff
+  color: $color-rose
+  border: 1px solid $color-rose
+
+.footer-container
+  margin-top: 110px
+  margin-bottom: 90px
+  display: flex
+  height: 260px
+
+.brand-footer
+  display: flex
+  align-items: center
+
+.footer-left
+  width: 427px
+  height: 100%
+  margin-right: 63px
+  color: #898989
+  font-size: 14px
+  &__logo
+    margin-bottom: 29px
+
+.footer-right
+  width: $footer-right
+  height: inherit
+
+.footer-nav
+  width: $footer-right / 3
+  height: 230px
+
+.footer-right nav
+  display: flex
+
+.footer-nav ul
+  list-style-type: none
+
+.footer-nav a
+  color: #898989
+  line-height: 30px
+  font-size: 16px
+  font-weight: 400
+  text-decoration: none
+  -webkit-transition: color .4s
+  -moz-transition: color .4s
+  -o-transition: color .4s
+
+.footer-nav .footer-link-active
+  color: $color-rose
+
+.footer-nav a:hover
+  color: $color-rose
+
+.footer-nav p
+  color: $color-rose
+  margin-top: 20px
+  margin-bottom: 40px
+  text-transform: uppercase
+
+.copyright
+  width: 100%
+  height: 79px
+  background-color: #e6e6e6
+
+.copyright-flex
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 79px
+
+.copyright-flex p
+  color: #7a7a7a
+  font-size: 16px
+  font-weight: 400
+
+.copyright1
+  float: left
+  height: 16px
+
+.copyright2
+  height: 32px
+
+.copyright2 ul
+  display: flex
+  justify-content: flex-end
+
+.copyright2 li
+  list-style-type: none
+  width: 32px
+  height: 32px
+  text-align: center
+  line-height: 32px
+  margin-left: 8px
+  border-radius: 5px
+
+.copyright2 a
+  text-decoration: none
+  color: #b2b2b2
+  background-color: #ffffff
+  width: 32px
+  height: 32px
+  line-height: 32px
+  -webkit-transition: background 0.6s, color 0.6s
+  -moz-transition: background 0.6s, color 0.6s
+  -o-transition: background 0.6s, color 0.6s
+
+.copyright2 a:hover
+  color: #f7f7f8
+  background-color: $color-rose
+  border-radius: 5px
