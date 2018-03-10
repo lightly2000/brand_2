@@ -82,7 +82,7 @@ body {
   height: 36px;
   border: none;
   border-left: 1px solid #e8e8e8;
-  background: url(img/search.png) no-repeat center center; }
+  background: url(../img/search.png) no-repeat center center; }
 
 input[type="button"]:active {
   background-color: #f16d7f; }
@@ -208,7 +208,7 @@ nav {
   width: 235px;
   height: 118px;
   margin-top: 21px;
-  background-image: url("img/mega-menu_pic.jpg");
+  background-image: url("../img/mega-menu_pic.jpg");
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
@@ -236,7 +236,7 @@ nav {
   display: flex;
   height: 100%;
   align-items: center;
-  background: url(img/slider_man_.jpg) 213px 0; }
+  background: url(../img/slider_man_.jpg) 213px 0; }
 
 .slider_text {
   height: 92px;
@@ -312,7 +312,7 @@ nav {
   width: 100px;
   height: 115px;
   margin-right: 21px;
-  background-image: url("img/cart-item-img.png");
+  background-image: url("../img/cart-item-img.png");
   float: left;
   -webkit-transition: filter 0.4s;
   -moz-transition: filter 0.4s;
@@ -744,13 +744,13 @@ nav {
   color: #fff; }
 
 .p-d-block-button-link:hover div {
-  background-image: url("img/single_cart_white.png"); }
+  background-image: url("../img/single_cart_white.png"); }
 
 .p-d-block-button-link div {
   width: 26px;
   height: 24px;
   margin-right: 15px;
-  background-image: url("img/single_cart_red.png");
+  background-image: url("../img/single_cart_red.png");
   -webkit-transition: background 0.4s;
   -moz-transition: background 0.4s;
   -o-transition: background 0.4s; }
@@ -957,7 +957,7 @@ details, summary {
   color: #ef5b70; }
 
 .category-nav details summary:after {
-  content: url("img/arrow_down.png");
+  content: url("../img/arrow_down.png");
   display: inline-block;
   float: right;
   position: relative;
@@ -965,7 +965,7 @@ details, summary {
   margin-right: 5px; }
 
 .category-nav details[open] summary:after {
-  content: url("img/arrow_up.png"); }
+  content: url("../img/arrow_up.png"); }
 
 .product-offer {
   width: 867px; }
@@ -1086,7 +1086,7 @@ details, summary {
 .item-1 {
   margin-bottom: 20px;
   height: 542px;
-  background-image: url(img/man.jpg);
+  background-image: url(../img/man.jpg);
   width: 560px;
   -webkit-background-size: cover;
   background-size: cover; }
@@ -1099,7 +1099,7 @@ details, summary {
 
 .item-2 {
   height: 261px;
-  background-image: url(img/accesories.jpg); }
+  background-image: url(../img/accesories.jpg); }
 
 .item-2 > div {
   width: 206px; }
@@ -1107,14 +1107,14 @@ details, summary {
 .item-3 {
   margin-bottom: 20px;
   height: 261px;
-  background-image: url(img/women.jpg); }
+  background-image: url(../img/women.jpg); }
 
 .item-3 > div {
   width: 143px; }
 
 .item-4 {
   height: 542px;
-  background-image: url(img/kids.jpg); }
+  background-image: url(../img/kids.jpg); }
 
 .item-4 > div {
   width: 161px; }
@@ -1271,7 +1271,7 @@ article {
 .subscribe_img {
   height: 438px;
   margin: 0 auto;
-  background: rgba(242, 242, 242, 0.5) url(img/subscribe_img.jpg);
+  background: rgba(242, 242, 242, 0.5) url(../img/subscribe_img.jpg);
   filter: saturate(90%); }
 
 .subscribe {
@@ -1297,7 +1297,7 @@ article {
   height: 83px;
   margin-right: 28px;
   border-radius: 50%;
-  background-image: url(img/Din.jpg); }
+  background-image: url(../img/Din.jpg); }
 
 .subscribe_text {
   display: flex;
